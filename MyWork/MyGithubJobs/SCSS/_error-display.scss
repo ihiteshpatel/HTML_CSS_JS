@@ -1,0 +1,11 @@
+.error-display {
+    position: relative;
+    @include flex(flex, column, space-between, center);
+    height: 320px;
+    text-align: center;
+    display: none;
+}
+
+.error-display.active {
+    display: flex;
+}

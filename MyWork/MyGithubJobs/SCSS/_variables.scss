@@ -1,0 +1,30 @@
+html {
+    --violet: rgba(89, 100, 224, 1);
+    --light-violet: rgba(147, 155, 244, 1);
+    --dark-grey: rgba(110, 128, 152, 1);
+    --gray: rgba(157, 174, 194, 1);
+}
+
+html[data-theme='light'] {
+    --bg: rgba(244, 246, 248, 1);
+    --bg-panel:rgba(255, 255, 255, 1);
+    --header-color: rgba(25, 32, 45, 1);
+    --filter-icon-color: rgba(110, 128, 152, 1);
+    --card-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+    --card-box-shadow-hover: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    --button-company : rgba(89, 100, 224, 0.25);
+    --button-company-hover : rgba(89, 100, 224, 0.4);
+    --button-company-color: var(--violet);
+}
+
+html[data-theme='dark'] {
+    --bg: rgba(18, 23, 33, 1);
+    --bg-panel:rgba(25, 32, 45, 1);
+    --header-color: rgba(255, 255, 255, 1);
+    --filter-icon-color: rgba(255, 255, 255, 1);
+    --card-box-shadow: 0px 0px 10px -1px rgba(200,200,200,0.5);
+    --card-box-shadow-hover: 0px 0px 10px 1px rgba(200,200,200,0.5);
+    --button-company : rgba(255, 255, 255, 0.25);
+    --button-company-hover : rgba(255, 255, 255, 0.4);
+    --button-company-color:  rgba(255, 255, 255, 1);
+}

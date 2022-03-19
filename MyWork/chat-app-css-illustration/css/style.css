@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+body > div {
+    margin: 0 50px;
+}
+.background_gradient, .background_simple {
+    width: 310px;
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+} 
+.background_gradient {
+    background: #8838ff;
+    background: linear-gradient(0deg, #8838ff 0%, #e942ff 100%);
+    top: 0;
+    left: -50px;
+    border-radius: 0 0 175px 175px;
+}
+.background_simple {
+    width: 450px;
+    background-color: #f5f3f7;
+    bottom: 0;
+    right: -150px;
+    border-radius: 250px 250px 0 0;
+}
+.details_title {
+    color: #3e2753;
+    font-weight: 500;
+    font-size: 35px;
+}
+.details_para {
+    color: #a39daa;
+    max-width: 450px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.appdemo {
+    background-color: #f5f3f7;
+    width: 240px;
+    height: 480px;
+    border: 15px solid white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    position: relative;
+}
+.appdemo * {
+    pointer-events: none;
+    user-select: none;
+}
+.appdemo .notch {
+    background-color: white;
+    height: 18px;
+    width: 130px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.appdemo_header {
+    background: #8838ff;
+    background: linear-gradient(90deg, #8838ff 0%, #e942ff 100%);
+    color: white;
+    padding: 20px 10px 10px 5px;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appdemo_header .icon {
+    height: 15px;
+}
+.appdemo_header--left {
+    display: flex;
+    align-items: center;
+}
+.appdemo_header--left .profile-pic {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    margin: 0 2px;
+}
+.appdemo_header--left .profile-pic img {
+    width: 25px;
+}
+.appdemo_header--left .profile-details .title {
+    font-weight: 500;
+    font-size: 18px;
+}
+.appdemo_header--left .profile-details .subtitle {
+    color: #d89eff;
+    font-size: 12px;
+}
+.appdemo_header .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20px;
+    width: 5px;
+}
+.appdemo_header .menu .dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+}
+.appdemo_body {
+    font-size: 14px;
+}
+.appdemo_body .chatreply_agent,
+.appdemo_body .chatreply_user,
+.appdemo_body .chatreply_pricing,
+.appdemo_body .chatreply_img_user {
+    max-width: 135px;
+    padding: 4px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 8px;
+}
+.appdemo_body .chatreply_agent {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #9241c8;
+}
+.appdemo_body .chatreply_user {
+    margin: 10px 5px 5px auto;
+    color: #6e5d7e;
+    background-color: #fff;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+.appdemo_body .chatreply_img_user {
+    display: flex;
+    margin: 5px 5px 5px auto;
+}
+.appdemo_body .chatreply_img_user .sentimg {
+    width: 40px;
+    margin: auto;
+    border-radius: 7px;
+}
+.appdemo_body .chatreply_pricing {
+    background: #8838ff;
+    background: linear-gradient(90deg, #e942ff 0%, #8838ff 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appdemo_body .chatreply_pricing .inner {
+    display: flex;
+    align-items: center;
+}
+.appdemo_body .chatreply_pricing .inner .checkbox-circle {
+    margin-right: 2px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border: 2px solid #e570ff;
+    border-radius: 50%;
+}
+.appdemo_body .chatreply_pricing .price {
+    font-weight: 700;
+    font-size: 24px;
+}
+.appdemo_footer {
+    display: flex;
+    margin: 0 2px;
+    padding: 2px 5px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.appdemo_footer .icon-holder {
+    background-color: #3e2753;
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+/*.appdemo_footer .icon-holder .icon {
+    height: 12px;
+    cursor: pointer;
+}*/
+.appdemo_footer .inputbox {
+    width: 100%;
+    color: #c6cacd;
+    padding-top: 7px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    body .appdemo {
+        margin-top: 50px;
+    }
+    body .details {
+        text-align: center;
+    }
+    body .details_title {
+        margin: 20px 0 10px 0;
+        font-size: 32px;
+    }
+    body .details_para {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

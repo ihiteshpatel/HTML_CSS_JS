@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+input::placeholder, input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.company-button {
+    color: var(--button-company-color);
+}
+
+.job-card-title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.job-card-location {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.job-card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.job-detail-header-title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.job-detail-desc > p, .job-detail-desc > p > a, .job-detail-desc > ul > li, .job-card-desc > p > code {
+    font-weight: 400;
+    color: var(--dark-grey);
+    line-height: 18px;
+}
+
+.job-detail-apply > p, .job-detail-apply > p > a, .job-detail-apply > ul > li {
+    color: white;
+    font-weight: 400;
+}
+
+.job-detail-desc > .job-detail-desc-title, .job-detail-apply > p:first-child {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.job-detail-desc > .job-card-location {
+    color: var(--violet);
+    font-weight: 700;
+}
+
+.job-detail-desc > a.button, .job-detail-footer-wrap > a.button {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.px20 {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--bg-panel);
+}
+
+p.error {
+    font-size: 13px;
+    font-weight: 400;
+    color: red;
+}
+
+
+.violet {
+    color: var(--violet);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.dark-grey {
+    color: var(--dark-grey);
+}
+
+.header-color {
+    color: var(--header-color);
+}
+
+.weight700 {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .job-detail-desc > .job-detail-desc-title, .job-detail-apply > p:first-child {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

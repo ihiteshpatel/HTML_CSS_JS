@@ -1,0 +1,68 @@
+.jobs {
+    width: 1110px;
+    @include flex(flex, row wrap, space-between, center);
+    margin-top: 80px;
+    position: relative;
+    height: auto;
+}
+.jobs.detail-display {
+    width: 730px;
+    margin: 0px;
+    top: -40px;
+}
+.job {
+    margin-bottom: 65px;
+}
+.job-card {
+    background-color: var(--bg-panel);
+    width: 350px;
+    height: 228px;
+    padding: 49px 32px 32px 32px;
+    @include flex(flex, column, space-between, flex-start);
+    position: relative;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: var(--card-box-shadow);
+    transform: scale(1.0);
+    @extend %transition-0-2s;
+}
+.job-card:hover {
+    box-shadow: var(--card-box-shadow-hover);
+    transform: scale(1.05);
+    @extend %transition-0-2s;
+}
+.job-card > img {
+    @include absolute-el(-25px, unset, unset, unset);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--bg-panel);
+}
+.job-circle {
+    font-size: 30px;
+}
+@media screen and (max-width: 1110px) {
+    .jobs {
+        width: 689px;
+        margin-top: 85px;
+    }
+    .job-card {
+        box-shadow: none;
+        width: 339px;
+        padding: 49px 21px 32px 32px;
+    }
+    .job-card:hover {
+        transform: scale(1);    
+    }
+}
+@media screen and (max-width: 768px) {
+    .jobs {
+        width: 327px;
+        @include flex(flex, column, space-between, center);
+        margin-top: 72px;
+    }
+    .job-card {
+        width: 327px;
+        height: 228px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <title>Pod Request Access Landing Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <div class="main-bg">
+                <img src="images/mobile/image-host.jpg" class="mobile-bg"  alt="Mobile BG">
+                <img src="images/tablet/image-host.jpg" class="tablet-bg" alt="Tablet BG">
+                <img src="images/image-host.jpg" class="desktop-bg" alt="Desktop BG">
+            </div>
+            <div class="logo-img">
+                <img src="images/logo.svg" alt="Logo Img">
+            </div>
+            <div class="content-area">
+                <h1>Publish your podcasts <span>everywhere</span></h1>
+                <p>
+                    Upload your audio to Pod with a single click. We’ll then distribute
+                    your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+                    and more!
+                </p>
+                <div class="pod-logos">
+                    <img src="images/spotify.svg" alt="Spotify" class="spotify">
+                    <img src="images/apple-podcast.svg" alt="Apple" class="apple">
+                    <img src="images/google-podcasts.svg" alt="Google" class="google">
+                    <img src="images/pocket-casts.svg" alt="Pocket" class="pocket">
+                </div>
+                <form class="form" id="form" action="#">
+                    <input type="email" class="input-email" id="email" placeholder="Email Address" name="email" required>
+                    <button type="submit" name="button" id="button" class="btn-submit">Request Access</button>
+                    <p id="demo"></p>
+                </form>
+            </div>
+            <img src="images/bg-pattern-dots.svg" alt="Pattern Dots" class="desk-dots">
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>

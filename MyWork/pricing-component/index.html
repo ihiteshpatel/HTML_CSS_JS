@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Interactive Pricing Component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="title">
+            <div class="title-img"></div>
+            <h3>Simple, traffic-based pricing</h3>
+            <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+            <div class="main-container">
+                <div class="slider-container">
+                    <div class="pageviews">
+                        <p id="pageview" class="pageview">100K Pageviews</p>
+                        <p id="price" class="price">$16.00<span class="price-span"> / month</span></p>
+                    </div>
+                    <input type="range" name="price-slider" class="price-slider" id="price-slider" min="-2" max="2"
+                        step="1" value="0" aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0"
+                        aria-label="Price range slider">
+                    <div class="billing">
+                        <p class="monthly-billing">Monthly Billing</p>
+                        <label class="switch">
+                            <input type="checkbox" id="interval-switch" class="interval-switch" aria-checked="false"
+                                aria-label="Yearly payment interval toggle switch">
+                            <span class="toggle-slider round"></span>
+                        </label>
+                        <p class="yearly-billing">Yearly Billing</p>
+                        <div class="discount">
+                            <p class="yearly-discount-lg">25% discount</p>
+                            <p class="yearly-discount-sm">-25%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta">
+                    <div class="cta-col">
+                        <div class="cta-list">
+                            <ul>
+                                <li>Unlimited websites</li>
+                                <li>100% data ownership</li>
+                                <li>Email reports</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cta-col">
+                        <a href="#" class="cta-link">Start my trial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+const background = document.querySelector('.background');
+const author = document.querySelector('.author');
+const icon = document.querySelector('.icon');
+const detail = document.querySelector('.detail');
+const period = document.querySelector('.period');
+const expand = document.querySelector('.expand');
+
+function getQuote() {
+    axios.get('https://api.quotable.io/random').then((quotesRes) => {
+        const chosenQuote = quotesRes.data;
+        document.getElementById('quote').textContent = chosenQuote.content;
+        if (chosenQuote.author == null) {
+            author.textContent = 'Unknown author';
+        } else {
+            author.textContent = chosenQuote.author;
+        }
+    }).catch((err) => console.error(err))
+}
+
+function getTime() {
+    let currentTime = new Date();
+    let hour = currentTime.getHours();
+    let minute = currentTime.getMinutes();
+
+    let greet = '';
+    if (hour >= 5 && hour <= 11) {
+        greet = 'morning';
+    } else if (hour >= 12 && hour <= 17) {
+        greet = 'afternoon';
+    } else {
+        greet = 'evening';
+    }
+    document.querySelector('.current__greeting').textContent = `good ${greet}`;
+
+    if (hour >= 5 && hour <= 17) {
+        background.classList.add('day');
+        icon.src = 'assets/desktop/icon-sun.svg';
+        icon.setAttribute('atl', 'sun icon');
+    } else {
+        background.classList.add('night');
+        icon.src = 'assets/desktop/icon-moon.svg';
+        icon.setAttribute('alt', 'moon icon');
+        detail.style.color = '#fff';
+        detail.style.background = 'rgba(0, 0, 0, 0.75)';
+    }
+    if (minute < 10) {
+        minute = '0' + minute;
+    }
+    if (hour === 0) {
+        hour = 12;
+        period.textContent = 'am';
+    } else if (hour === 12) {
+        period.textContent = 'pm';
+    } else if (hour > 12) {
+        hour -= 12;
+        period.textContent = 'pm';
+    } else {
+        period.textContent = 'am';
+    }
+    document.querySelector('.time-now').textContent = `${hour}:${minute}`;
+
+    let interval = (60 - (new Date()).getSeconds()) * 1000 + 5;
+    setTimeout(getTime, interval)
+}
+
+function getTimeZone() {
+    axios.get('https://worldtimeapi.org/api/ip').then((regionRes) => {
+        const region = regionRes.data;
+        document.querySelector('.region').textContent = region.abbreviation;
+        document.getElementById('timezone').textContent = region.timezone;
+        document.getElementById('year-day').textContent = region.day_of_year;
+        document.getElementById('week-day').textContent = region.day_of_week;
+        document.getElementById('week-number').textContent = region.week_number;
+    }).catch(err => console.error(err))
+}
+function getLocation() {
+    axios.get('https://freegeoip.app/json/').then((locationRes) => {
+        const ipLocation = locationRes.data;
+        const regionName = ipLocation.region_name;
+        const countryCode = ipLocation.country_code;
+        document.querySelector('.current__location').textContent = `in ${regionName}, ${countryCode}`;
+    }).catch(err => console.error(err))
+}
+getQuote();
+getTime();
+getTimeZone();
+getLocation();
+
+function showDetails() {
+    document.querySelector('.wrapper').classList.toggle('transform');
+    detail.classList.toggle('transform');
+    if (expand.firstChild.nodeValue === 'More') {
+        expand.firstChild.nodeValue = 'Less';
+    } else {
+        expand.firstChild.nodeValue = 'More';
+    }
+    const arrow = document.querySelector('.arrow');
+    arrow.classList.toggle('rotate');
+}
+expand.addEventListener('click', showDetails);
+document.getElementById('refresh').addEventListener('click', getQuote);

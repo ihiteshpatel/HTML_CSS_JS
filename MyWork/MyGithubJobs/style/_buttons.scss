@@ -1,0 +1,121 @@
+.button-switcher {
+    width: 48px;
+    height: 24px;
+    @extend %flex-center-center;
+    position: relative;
+    @extend %transition-0-2s;
+}
+.button-switcher::before {
+    content: '';
+    width: 20px;
+    height: 19px;
+    @include absolute-el (unset, unset, unset, -32px);
+    background-image: url(../assets/desktop/icon-sun.svg);
+    @extend %transition-0-2s;
+}
+.button-switcher::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    @include absolute-el(unset, -29px, unset, unset);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/desktop/icon-moon.svg);
+    @extend %transition-0-2s;
+}
+#switcher {
+    width: 48px;
+    height: 24px;
+    background: white;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    @extend %transition-0-2s;
+}
+#switcher::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+    background-color: rgba(89, 100, 224, 1);
+    @extend %transition-0-2s;
+}
+#switcher.active::before {
+    left: 30px;
+    @extend %transition-0-2s;
+}
+.button {
+    background-color: var(--violet);
+    border-radius: 5px;
+    @extend %flex-center-center;
+    cursor: pointer;
+    @extend %transition-0-2s;
+}
+.search-button {
+    width: 123px;
+    height: 48px;
+}
+.search-button-mobile {
+    width: 279px;
+    height: 48px;
+}
+.apply-button {
+    width: 141px;
+    height: 48px;
+}
+.button:hover {
+    background-color: rgba(147, 155, 244, 1);
+    @extend %transition-0-2s;
+}
+.load-more-button {
+    width: 141px;
+    height: 48px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.load-more-button.displayNone {
+    display: none;
+}
+.company-button {
+    background-color: var(--button-company);
+    width: 147px;
+    height: 48px;
+    border-radius: 5px;
+    @extend %flex-center-center;
+    cursor: pointer;
+    @extend %transition-0-2s;
+}
+.company-button:hover {
+    @extend %flex-center-center;
+    background-color: var(--button-company-hover);
+}
+.company-button.error {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    pointer-events: none;
+}
+@media screen and (max-width: 1110px) {
+    .search-button {
+        width: 80px;
+        height: 48px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .search-button {
+        width: 48px;
+        height: 48px;
+    }
+    .apply-button {
+        width: 279px;
+    }
+    .apply-button-footer {
+        width: 327px;
+        height: 48px;
+    }
+}

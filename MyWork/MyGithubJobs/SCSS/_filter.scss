@@ -1,0 +1,227 @@
+.filter {
+    width: 1110px;
+    height: 80px;
+    background-color: var(--bg-panel);
+    @include flex(flex, row, space-between, center);
+    padding: 16px 16px 16px 32px;
+    position: relative;
+    border-radius: 6px;
+    top: -40px;
+    z-index: 2;
+}
+
+.filter-search {
+    width: 431px;
+    height: 48px;
+    padding-left: 40px;
+    position: relative;
+}
+
+#search-bar, #search-location {
+    width: 94%;
+    height: 100%;
+}
+
+#icon-glass {
+    @include absolute-el(10px, unset, unset, 0px);
+}
+
+.filter-search::after, .filter-location::after {
+    content: '';
+    @include absolute-el(-16px, 0px, unset, unset);
+    width: 1px;
+    height: 80px;
+    opacity: 0.2;
+    background-color: var(--dark-grey);
+}
+
+.filter-location {
+    width: 300px;
+    height: 48px;
+    padding-left: 62px;
+    position: relative;
+}
+
+#icon-location {
+    @include absolute-el(10px, unset, unset, 25px); 
+}
+
+.filter-fulltime {
+    width: 206px;
+    height: 48px;
+    padding-left: 32px;
+    position: relative;
+    @extend %flex-center-center;
+}
+
+.checkbox-wrapper {
+    position: absolute;
+    left: 35px;
+    top: 23px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.checkmark {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--gray);
+    border-radius: 3px;
+    position: relative;
+    transition: background-color 0.4s;
+    cursor: pointer;
+}
+
+#check:checked ~ .checkmark {
+    background-color: var(--violet);
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 13px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    top: 40%;
+    left: 52%;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(2);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#check:checked ~ .checkmark::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateZ(40deg) scale(1);
+}
+
+#icon-filter, .search-button-wrapper-mobile, .dark-overlay {
+    display: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .filter {
+        width: 689px;
+    }
+    
+    .filter-search {
+        width: 200px;
+    }
+    
+    .filter-location {
+        width: 213px;
+        padding-left: 57px;
+    }
+    
+    .filter-fulltime {
+        width: 156px;
+        padding-left: 32px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filter {
+        width: 327px;
+        padding: 16px 16px 16px 24px;
+    }
+    
+    .filter-search {
+        width: 231px;
+        padding-left: 0px;
+    }
+    
+    #search-bar, #search-location {
+        width: 76%;
+        height: 100%;
+    }
+    
+    #icon-glass, .filter-search::after {
+        display: none;
+    }
+    
+    .filter-location::after {
+        @include absolute-el(unset, unset, 0px, 0px);
+        width: 327px;
+        height: 1px;
+        z-index: 3;
+    }
+    
+    .filter-location {
+        width: 327px;
+        height: 60px;
+        padding-left: 57px;
+        @include absolute-el(unset, unset, -100px, 0px);
+        background-color: var(--bg-panel);
+        border-radius: 6px 6px 0px 0px;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s ease-in-out;
+    }
+    
+    #icon-location {
+        @include absolute-el(15px, unset, unset, 20px); 
+        z-index: 3;
+    }
+    
+    .filter-fulltime {
+        width: 327px;
+        height: 60px;
+        padding-left: 58px;
+        padding-top: 9px;
+        @include absolute-el(unset, unset, -150px, 0px);
+        @include flex(flex, row, flex-start, center);
+        background-color: var(--bg-panel);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .checkbox-wrapper {
+        @include absolute-el(33px, unset, unset, 29px);
+    }
+
+    #icon-filter {
+        display: block;
+        @include absolute-el(unset, 85px, unset, unset);
+        cursor: pointer;
+    }
+
+    #icon-filter > path {
+        fill: var(--filter-icon-color);
+    }
+
+    .search-button-wrapper-mobile {
+        @include flex(flex, row, center, center);
+        background-color: var(--bg-panel);
+        width: 327px;
+        height: 85px;
+        @include absolute-el(unset, unset, -220px, 0px);
+        z-index: 3;
+        opacity: 0;
+        pointer-events: none;
+        border-radius: 0px 0px 6px 6px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .dark-overlay {
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        @include absolute-el(0px, unset, unset, 0px);
+        opacity: 0;
+        z-index: 1;
+        transition: 0.2s ease-in-out;
+        pointer-events: none;
+    }
+
+    .dark-overlay.active, .search-button-wrapper-mobile.active, 
+    .filter-fulltime.active, .filter-location.active {
+        opacity: 1;
+        pointer-events: all;
+        transition: 0.2s ease-in-out;
+    }
+    
+}

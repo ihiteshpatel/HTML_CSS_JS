@@ -1,0 +1,358 @@
+:root {
+    --light-green: #54e6af;
+    --dark-blue: #2c344b;
+    --very-dark-blue: #121725;
+    --light-blue: #5a668a;
+    --very-light-blue: #c2cbe5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Chivo', sans-serif;
+    background-color: var(--very-dark-blue);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 327px;
+    position: relative;
+}
+.main-bg img {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+}
+.logo-img {
+    width: 96px;
+    height: 40px;
+    margin: 65px 0px 70px 0;
+}
+.logo-img img {
+    width: 96px;
+    height: 40px;
+}
+h1 {
+    font-size: 26px;
+    color: var(--light-green);
+    font-weight: 300;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 span {
+    color: white;
+}
+p {
+    font-size: 16px;
+    color: var(--very-light-blue);
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 15px;
+    padding: 15px;
+    min-width: 327px;
+    text-align: center;
+}
+.pod-logos {
+    width: 315px;
+    height: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 30px;
+}
+.spotify {
+    width: 56px;
+    height: 17px;
+}
+.apple {
+    width: 46px;
+    height: 17px;
+}
+.google {
+    width: 73px;
+    height: 17px;
+}
+.pocket {
+    width: 77px;
+    height: 17px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40px;
+    align-items: center;
+}
+.input-email {
+    position: unset;
+}
+.btn-submit {
+    position: unset;
+}
+.btn-submit:hover {
+    background-color: #b3ffe2;
+}
+.input-email {
+    width: 327px;
+    height: 46px;
+    background-color: var(--dark-blue);
+    border-radius: 28px;
+    border: none;
+    padding-left: 25px;
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 700;
+}
+input::placeholder {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+input:focus {
+    outline: none;
+}
+.btn-submit {
+    width: 327px;
+    height: 46px;
+    background-color: var(--light-green);
+    border-radius: 28px;
+    border: none;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    box-shadow: 0 24px 24px 8px hsla(157, 74%, 62%, 0.125);
+}
+.tablet-bg,
+.desktop-bg,
+.desk-dots {
+    display: none;
+}
+/*.error {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fb3e3e;
+    top: -30px;
+    left: 50px;
+    display: none;
+}*/
+.mail-name {
+    color: red;
+    float: left;
+    margin-left: 35px;
+    font-size: 16px;
+    font-weight: 300;
+     margin-top: 10px;
+}
+@media (min-width: 768px) {
+    .mobile-bg,
+    .desktop-bg {
+        display: none;
+    }
+    .tablet-bg {
+        display: unset;
+    }
+    .logo-img {
+        width: 135px;
+        height: 56px;
+        margin: 50px 0 150px 50px;
+    }
+    .logo-img img {
+        width: 135px;
+        height: 56px;
+    }
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .main-bg img {
+        position: absolute;
+        width: 491px;
+        top: 0px;
+        left: 277px;
+        z-index: -1;
+        opacity: 0.8;
+        background-blend-mode: multiply;
+        background-color: var(--light-green);
+    }
+    .content-area {
+        display: grid;
+        grid-template-areas: 
+        'h1'
+        'p'
+        'form'
+        'podlogos'
+        'deskdots';
+        background-color: var(--very-dark-blue);
+        width: 635px;
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+    .desk-dots {
+        grid-area: "deskdots";
+        display: unset;
+        margin-top: 108px;
+    }
+    form {
+        display: unset;
+        grid-area: form;
+        position: relative;
+        margin-top: 40px;
+    }
+    .input-email {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 427px;
+        height: 56px;
+        margin: unset;
+    }
+    .btn-submit {
+        position: absolute;
+        top: 5px;
+        left: 260px;
+        width: 162px;
+        height: 46px;
+        margin: unset;
+    }
+    .pod-logos {
+        width: 536px;
+        height: 29px;
+        grid-area: podlogos;
+        margin-top: 120px;
+    }
+    .spotify {
+        width: 96px;
+        height: 29px;
+    }
+    .apple {
+        width: 78px;
+        height: 29px;
+    }
+    .google {
+        width: 125px;
+        height: 18px;
+    }
+    .pocket {
+        width: 129px;
+        height: 26px;
+    }
+    h1 {
+        grid-area: h1;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: left;
+        margin-top: 95px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        grid-area: p;
+        text-align: left;
+        width: 450px;
+        margin-top: 30px;
+    }
+    main {
+        align-items: flex-start;
+    }
+    .mail-name{
+        color: red;
+        float: left;
+        margin-left: 35px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+}
+    @media (min-width: 1289px) {
+        .tablet-bg {
+            display: none;
+        }
+        .desktop-bg {
+            display: unset;
+        }
+        .main-bg img {
+            position: absolute;
+            width: 888px;
+            height: 640px;
+            top: 100px;
+            left: 475px;
+            z-index: -1;
+            opacity: 0.8;
+            background-blend-mode: multiply;
+            background-color: var(--light-green);
+        }
+        main {
+            width: 1289px;
+            margin: 0 auto;
+        }
+        .logo-img {
+            margin: 70px 0 101px 90px;
+        }
+        .content-area {
+            width: 723px;
+            align-items: flex-start;
+            margin-left: 90px;
+        }
+        h1 {
+            font-size: 52px;
+            line-height: 62px;
+            margin-top: 50px;
+        }
+        p {
+            margin-top: 20px;
+        }
+        .desk-dots {
+            display: unset;
+            position: absolute;
+            bottom: 0px;
+            right: -75px;
+        }
+        .mail-name{
+        color: red;
+        float: left;
+        margin-left: 35px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

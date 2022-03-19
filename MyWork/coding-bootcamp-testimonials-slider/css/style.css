@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 32px;
+}
+.container {
+	min-height: 100vh;
+	/*width: 100%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../images/pattern-curve.svg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 70%;
+}
+.slider {
+	display: block;
+	height: 100%;
+	width: 100%;
+	max-width: 850px;
+	margin: 0 auto;
+	position: relative;
+}
+.slide {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+.slide-img {
+	width: fit-content;
+	height: 100%;
+	margin: 0 auto;
+	padding: 40px;
+	background-image: url(../images/pattern-bg.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+.slide-img img {
+	height: 100%;
+	width: 300px;
+	border-radius: 5px;
+}
+.testimonial {
+	margin-top: 30px;
+	margin-left: 30px;
+	padding: 40px 0;
+	width: 1140px;
+	background-image: url(../images/pattern-quotes.svg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 65px;
+	line-height: 27px;
+}
+.text {
+	font-size: 22px;
+}
+.author {
+	font-size: 18px;
+	margin-top: 20px;
+	font-weight: 700;
+	line-height: 25px;
+}
+span {
+	font-weight: 500;
+	color: #babacf;
+}
+.buttons {
+	position: absolute;
+	top: 315px;
+	left: 70%;
+	transform: translateX(-50%);
+	width: 90px;
+	height: 45px;
+	background-color: #fff;
+	border-radius: 50px;
+}
+.prev, .next {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+}
+.prev:hover, .next:hover {
+	background-color: #bcbccd;
+}
+.prev {
+	left: 0;
+	border-radius: 50px 0 0 50px;
+}
+.next {
+	right: 0;
+	border-radius: 0 50px 50px 0;
+}
+.prev::after, .next::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.prev::after {
+	background-image: url(../images/icon-prev.svg);
+}
+.next::after {
+	background-image: url(../images/icon-next.svg);
+}
+
+.slide-1 {
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		margin: 0 auto;
+	}
+	.slide {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.testimonial {
+		text-align: left;
+		width: 375px;
+		background-position: top left 50px;
+		background-size: 75px;
+		margin: 0 auto;
+	}
+	span {
+		display: block;
+	}
+	.buttons {
+		left: 52%;
+	}
+}
+@media only screen and (max-width: 375px){
+	.testimonial {
+		text-align: center;
+		
+	}
+}

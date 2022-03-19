@@ -1,0 +1,173 @@
+html {
+	background-color: #869960;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 87%;
+}
+.container {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+header {
+	padding-top: 20px;
+	color: #617140;
+}
+header h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 165%;
+}
+header p {
+	margin: 0;
+}
+main {
+}
+/* Site Navigation */
+.site-nav {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+.site-nav a {
+	display: inline;
+	color: #617140;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #e5e9dc;
+}
+.site-nav a:hover {
+	background-color: #e5e9dc;
+}
+/* End Site Navigation */
+.content-area {
+	border-top: 3px solid #e5e9dc;
+	border-bottom: 3px solid #e5e9dc;
+}
+.main-area {
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+/* Table Styles */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+table th {
+    text-align: left;
+    background-color: #869960;
+    color: #fff;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+table th,
+table td {
+    border: 1px solid #869960;
+    padding: 10px;
+    vertical-align: top;
+}
+table tbody tr:nth-child(odd) td {
+    background-color: #e5e9dc;
+}
+.col-item-name {
+    width: 60%;
+}
+.col-quantity,
+.col-price {
+    width: 20%;
+}
+table.grocery-list tr :nth-child(2),
+table.grocery-list tr :nth-child(3) {
+    text-align: center;
+}
+/* End Table Styles */
+/* Form Styles */
+form {
+	background-color: #ececec;
+	padding: 30px 40px;
+}
+.hidden-label {
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+input,
+select {
+	font-family: 'Tahoma', sans-serif;
+	font-size: 100%;
+}
+select {
+	border-radius: 0;
+}
+input[type="email"],
+input[type="password"],
+select {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 40px;
+	margin-bottom: 15px;
+	border: 1px solid #cdcdcd;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border: 1px solid #869960;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.13);
+	outline: none;
+}
+input[type="submit"] {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background-color: #869960;
+	color: #fff;
+	padding: 10px 0;
+	border: 1px solid #798A56;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	border: 1px solid #535e38;
+	background-color: #798A56;
+	outline: none;
+}
+.checkbox-text {
+	color: #777;
+}
+/* End Form Styles */
+.fix {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}

@@ -1,0 +1,45 @@
+body {
+	font-family: 'Verdana', sans-serif;
+}
+.calc {
+	background-color: white;
+	width: 240px;
+	height: 480px;
+	border: 2px solid gray;
+	padding: 10px;
+}
+.numBtn {
+	color: maroon;
+	width: 50px;
+	height: 50px;
+}
+.opBtn {
+	background-color: maroon;
+	color: white;
+	width: 50px;
+	height: 50px;
+}
+.calBtn {
+	background-color: blue;
+	color: white;
+	width: 50px;
+	height: 50px;
+}
+.clrBtn {
+	background-color: green;
+	color: white;
+	width: 50px;
+	height: 50px;
+}
+.delBtn {
+	background-color: green;
+	color: white;
+	width: 50px;
+	height: 50px;
+}
+.numtxt {
+	background-color: grey;
+	color: white;
+	text-align: right;
+	height: 40px;
+}

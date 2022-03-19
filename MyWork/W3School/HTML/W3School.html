@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="Description" content="Free Web Tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<style>
+		body {background-color: powderblue;}
+		.city {
+			background-color: tomato;
+			color: white;
+			border: 2px solid black;
+			margin: 20px;
+			padding: 20px;
+		}
+		.note {
+			font-size: 120%;
+			color: red;
+		}
+		.city1 {
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+		}
+		.main {
+			text-align: center;
+		}
+		#myHeader {
+			background-color: lightblue;
+			color: black;
+			padding: 40px;
+			text-align: center;
+		}
+	</style>
+	<title>W3School HTML Tutorial</title>
+	<script>
+		function mFunction() {
+			document.getElementById("test").innerHTML = "Hello JavaScript!";
+		}
+	</script>
+</head>
+<body>
+	<h1>My First Heading</h1>
+	<p>My First Paragraph</p>
+
+	<h1>This is heading 1</h1>
+	<h2>This is heading 2</h2>
+	<h3>This is heading 3</h3>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<a href="https://www.w3schools.com">This is a link</a>
+
+	<h2>HTML Images</h2>
+	<p>HTML images are defined with the img tag:</p>
+
+	<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+	<p>This is a <br> paragraph with a line break.</p>
+
+	<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+	<h2>The src Attribute</h2>
+	<p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p>
+	<img src="img_girl.jpg">
+
+	<img src="img_girl.jpg" width="500" height="600">
+
+	<img src="img_girl.jpg" alt="Girl with a jacket">
+
+	<img src="img_typo.jpg" alt="Girl with a jacket">
+
+	<p style="color:red;">This is a red paragraph.</p>
+
+	<p title="I'm a tooltip">This is a paragraph.</p>
+
+	<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>
+
+	<h1>About W3Schools</h1>
+	<p title=About W3Schools>You cannot omit quotes around an attribute value if the value contains spaces.</p>
+	<p><b>If you move the mouse over the paragraph above, your browser will only display the first word from the title.</b></p>
+
+	<h2>Single or Double Quotes?</h2>
+	<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+	<p>Move your mouse over the paragraphs below to see the effect:</p>
+	<p title='John "ShotGun" Nelson'>John with double quotes</p>
+	<p title="John 'ShotGun' Nelson">John with single quotes</p>
+
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<h1 style="font-size: 60px;">Heading 1</h1>
+	<p>You can change the size of a heading with the style attribute, using the font-size property.</p>
+
+	<p>
+		This paragraph
+		contains a lot of lines
+		in the source code,
+		but the browser
+		ignores it.
+	</p>
+	<p>
+		This paragraph
+		contains	a lot of spaces
+		in the source   code,
+		but the   browser
+		ignores it.
+	</p>
+	<p>
+		The number of lines in a paragraph depends on the size of the browser
+		window. If you resize the browser window, the number of lines in this
+		paragraph will change.
+	</p>
+
+	<h1>This is heading 1</h1>
+	<p>This is some text.</p>
+	<hr>
+
+	<h2>This is heading 2</h2>
+	<p>This is some other text.</p>
+	<hr>
+
+	<h2>This is heading 2</h2>
+	<p>This is some other text.</p>
+
+	<p>In HTML, spaces and new lines are ignored:</p>
+	<p>
+	My Bonnie lies over the ocean.
+	My Bonnie lies over the sea.
+	My Bonnie lies over the ocean.
+	Oh, bring back my Bonnie to me.
+	</p>
+
+	<p>The pre tag preserves both spaces and line breaks:</p>
+	<pre>
+		My Bonnie lies over the ocean.
+		My Bonnie lies over the sea.
+		My Bonnie lies over the ocean.
+		Oh, bring back my Bonnie to me.
+	</pre>
+
+	<p>I am normal</p>
+	<p style="color:red;">I am red</p>
+	<p style="color:blue;">I am blue</p>
+	<p style="font-size: 50px;">I am big</p>
+
+	<h1 style="background-color:blue;">This is a heading</h1>
+	<p style="background-color: tomato;">This is a paragraph.</p>
+
+	<h1 style="color:blue;">This is a heading</h1>
+	<p style="color:red;">This is a paragraph.</p>
+
+	<h1 style="font-family:verdana;">This is a heading</h1>
+	<p style="font-family:courier;">This is a paragraph.</p>
+
+	<h1 style="font-size:300%;">This is a heading</h1>
+	<p style="font-size:160%;">This is a paragraph.</p>
+
+	<h1 style="text-align: center;">Centered Heading</h1>
+	<p style="text-align: center;">Centered Paragraph.</p>
+
+	<p><b>This text is bold</b></p>
+	<p><i>This text is italic</i></p>
+	<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+	<p>This text is normal.</p>
+	<p><strong>This text is normal!</strong></p>
+
+	<p>This text is normal.</p>
+	<p><em>This text is emphasized.</em></p>
+
+	<p>This is some normal text.</p>
+	<p><small>This is some smaller text.</small></p>
+
+	<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+	<p>My favorite color is <del>blue</del> red.</p>
+
+	<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+	<p>This is <sub>subscripted</sub> text.</p>
+
+	<p>This is <sup>superscripted</sup> text.</p>
+
+	<p>Here is a quote from WWF's website:</p>
+	For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 centuries and is supported by 1.2 million members in the United States and close to 5 million globally.
+
+	<p>Browsers usually indent blockquote elements.</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+		For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 centuries and is supported by more than one million members in the United States and close to five million globally.
+	</blockquote>
+
+	<p>Browsers usually insert quotation marks around the q element.</p>
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+
+	<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+	<address>
+		Written by John Doe.<br>
+		Visit us at:<br>
+		Example.com<br>
+		Box 564, Disneyland<br>
+		USA
+	</address>
+
+	<p>The HTML cite element defines the title of a work.</p>
+	<p>Browsers usually display cite elements in italic.</p>
+	<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+	<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+	<bdo dir="rtl">This line will be written from right to left</bdo>
+
+	<!-- This is a comment -->
+	<p>This is a paragraph.</p>
+	<!-- Comments are not displayed in the browser -->
+
+	<!-- Do not display this at the moment
+		<img border="0" src="pic_trulli.jpg" alt="Trulli">-->
+
+	<h1 style="background-color: tomato;">Tomato</h1>
+	<h1 style="background-color: orange;">Orange</h1>
+	<h1 style="background-color: dodgerblue;">DodgerBlue</h1>
+	<h1 style="background-color: mediumseagreen;">MediumSeaGreen</h1>
+	<h1 style="background-color: Gray;">Gray</h1>
+	<h1 style="background-color: slateblue;">SlateBlue</h1>
+	<h1 style="background-color: violet;">Violet</h1>
+	<h1 style="background-color: lightgray;">LightGray</h1>
+
+	<h1 style="background-color: dodgerblue;">Hello World</h1>
+	<p style="background-color: tomato;">
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+	</p>
+
+	<h3 style="color:tomato;">Hello World</h3>
+	<p style="color:dodgerblue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat voultpat.</p>
+	<p style="color:mediumseagreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+	<h1 style="border: 2px solid tomato;">Hello World</h1>
+	<h1 style="border: 2px solid dodgerblue;">Hello World</h1>
+	<h1 style="border: 2px solid violet;">Hello World</h1>
+
+	<p>Same as color name "Tomato":</p>
+	<h1 style="background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+	<h1 style="background-color: #ff6347;">#ff6347</h1>
+	<h1 style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+	<p>Same as color name "Tomato", but 50% transparent:</p>
+	<h1 style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+	<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+	<h1 style="background-color: rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+	<h1 style="background-color: rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+	<h1 style="background-color: rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+	<h1 style="background-color: rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+	<h1 style="background-color: rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+	<h1 style="background-color: rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+	<h1 style="background-color: rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+	<h1 style="background-color: rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+	<h1 style="background-color: rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+	<h1 style="background-color: rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+	<h1 style="background-color: rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+	<h1 style="background-color: rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+
+	<h1 style="background-color: rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+	<h1 style="background-color: rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+	<h1 style="background-color: rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+	<h1 style="background-color: rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+	<h1 style="background-color: rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+	<h1 style="background-color: rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+	<h1 style="background-color: #ff0000;">#ff0000</h1>
+	<h1 style="background-color: #0000ff;">#0000ff</h1>
+	<h1 style="background-color: #3cb371;">#3cb371</h1>
+	<h1 style="background-color: #ee82ee;">#ee82ee</h1>
+	<h1 style="background-color: #ffa500;">#ffa500</h1>
+	<h1 style="background-color: #6a5acd;">#6a5acd</h1>
+
+	<h1 style="background-color: #404040;">#404040</h1>
+	<h1 style="background-color: #686868;">#686868</h1>
+	<h1 style="background-color: #a0a0a0;">#a0a0a0</h1>
+	<h1 style="background-color: #bebebe;">#bebebe</h1>
+	<h1 style="background-color: #dcdcdc;">#dcdcdc</h1>
+	<h1 style="background-color: #f8f8f8;">#f8f8f8</h1>
+
+	<h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+	<h1 style="background-color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+	<h1 style="background-color: hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+	<h1 style="background-color: hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+	<h1 style="background-color: hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+	<h1 style="background-color: hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+	<h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+	<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+
+	<h1 style="background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+	<h1 style="background-color: hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+	<h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+	<h1 style="background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+	<h1 style="background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+	<h1 style="background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+	<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+
+	<h1 style="background-color: hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+	<h1 style="background-color: hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+
+	<h1 style="background-color: hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+	<h1 style="background-color: hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+	<h1 style="color:blue;">A Blue Heading</h1>
+	<p style="color:red;">A red paragraph.</p>
+
+	<h1>HTML Links</h1>
+	<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+	<h2>The target Attribute</h2>
+	<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+	<p>If target="_blank", the link will open in a new browser window or tab.</p>
+
+	<h2>Absolute URLs</h2>
+	<p><a href="https://www.w3.org/">W3C</a></p>
+	<p><a href="https://www.google.com/">Google</a></p>
+
+	<h2>Relative URLs</h2>
+	<p><a href="html_images.asp">HTML Images</a></p>
+	<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+	<h2>Image as a Link</h2>
+	<p>The image below is a link. Try to click on it.</p>
+	<a href="default.asp"><img src="smiley.gif" alt="HTML Tutorial" style="width:42px;height:42px;"></a>
+
+	<h2>Link to an Email Address</h2>
+	<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+	<p><a href="mailto:someone@example.com">Send email</a></p>
+
+	<h2>Button as a Links</h2>
+	<p>Click the button to go to the HTML tutorial.</p>
+	<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+	<h2>Link Titles</h2>
+	<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+	<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+	<h2>External Paths</h2>
+	<p>This example uses a full URL to link to a web page:</p>
+	<p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+
+	<h2>External Paths</h2>
+	<p>This example links to a page located in the html folder on the current website:</p>
+	<p><a href="/html/default.asp">HTML tutorial</a></p>
+
+	<h2>External Paths</h2>
+	<p>This example links to a page located in the same folder as the current page:</p>
+	<p><a href="default.asp">HTML tutorial</a>
+
+	<p><a href="#C4">Jump to Chapter 4</a></p>
+	<p><a href="#C10">Jump to Chapter 10</a></p>
+
+	<h2>Chapter 1</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 2</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 3</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2 id="C4">Chapter 4</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 5</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 6</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 7</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 8</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2>Chapter 9</h2>
+	<p>This chapter explains ba bla bla</p>
+	<h2 id="C10">Chapter 10</h2>
+	<p>This chapter explains ba bla bla</p>
+
+	<h2>HTML Image</h2>
+	<img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+
+	<h2>HTML Image</h2>
+	<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+	<h2>HTML Image</h2>
+	<img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+	<h2>Alternative text</h2>
+	<p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:</p>
+	<img src="img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+	<p>If a browser cannot find the image, it will display the alternate text:</p>
+	<img src="wrongname.gif" alt="Flowers in Chania">
+
+	<h2>Image Size</h2>
+	<p>Here we use the style attribute to specify the width and height of an image:</p>
+	<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+	<h2>Images in Another Folder</h2>
+	<p>It is common to store images in a sub-folder. You must then include the folder name in the src attribute:</p>
+	<img src="images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+	<h2>Images on Another Server</h2>
+	<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+	<h2>Animated Images</h2>
+	<p>HTML allows moving images:</p>
+	<img src="programming.gif" alt="Computer man" style="width:48px;height:48px;">
+
+	<h2>Image as a Link</h2>
+	<p>The image is a link. You can click on it.</p>
+	<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+	<h2>Floating Images</h2>
+	<p><strong>Float the image to the right:</strong></p>
+	<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.</p>
+	<p><strong>Float the image to the left:</strong></p>
+	<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.</p>
+
+	<h2>Image Maps</h2>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+		<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+		<area shape="circle" coords="337,300,44" alt="Cup of Coffee" href="coffee.htm">
+	</map>
+
+	<h2>Image Maps</h2>
+	<p>Click on the computer, to go to a new page and read more about the topic:</p>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	</map>
+
+	<h2>Image Maps</h2>
+	<p>Click on the cup of coffee to go to a new page and read more about the topic:</p>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+	</map>
+
+	<h2>Image Maps</h2>
+	<p>Click on the croissant to go to a new page and read more about the topic:</p>
+	<img src="frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+	<map name="foodmap">
+		<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm">
+	</map>
+
+	<h2>Image Maps</h2>
+	<p>Click on the cup of coffee to execute a JavaScript function:</p>
+	<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+	</map>
+	<script>
+		function.myFunction() {
+			alert("You clicked the coffee cup!");
+		}
+	</script>
+
+	<h2>Background Image</h2>
+	<p>A background image for a div element:</p>
+	<div style="background-image: url('img_girl.jpg');">
+		You can specify background images<br>
+		for any visible HTML element.<br>
+		In this example, the background image<br>
+		is specified for a div element.<br>
+		By default, the background-image<br>
+		will repeat itself in the direction(s)<br>
+		where it is smaller than the element<br>
+		where it is specified. (Try resizing the<br>
+		browser window to see how the<br>
+		background image behaves.
+	</div>
+	<p>A background image for a p element:</p>
+	<p style="background-image: url('img_girl.jpg');">
+		You can specify background images<br>
+		for any visible HTML element.<br>
+		In this example, the background image<br>
+		is specified for a p element.<br>
+		By default, the background image<br>
+		will repeat itself in the direction(s)<br>
+		where it is smaller than the element<br>
+		where it is specified. (Try resizing the<br>
+		browser window to see how the<br>
+		background image behaves.
+	</p>
+
+	<h2>The picture Element</h2>
+	<picture>
+		<source media="(min-width: 650px)" srcset="img_food.jpg">
+		<source media="(min-width: 465px)" srcset="img_car.jpg">
+		<img src="img_girl.jpg" style="width:auto;">
+	</picture>
+	<p>Resize the browser to see different versions of the picture loading at different viewport sizes. The browser looks for the first source element where the media query matches the user's current viewport width, and fetches the image specified in the srcset attribute.</p>
+	<p>The img element is required as the last child tag of the picture declaration block. The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.</p>
+	<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+
+	<h2>The Picture Element</h2>
+	<picture>
+		<source srcset="img_avatar.png">
+		<source srcset="img_girl.jpg">
+		<img src="img_beatles.gif" alt="Beatles" style="width:auto">
+	</picture>
+	<p>The picture element can be used when the image format is not supported by all devices.</p>
+	<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+
+	<h2>Basic HTML Table</h2>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+	<h2>An Unordered HTML List</h2>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+	<h2>An Ordered HTML List</h2>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>A Description List</h2>
+	<dl>
+		<dt>Coffee</dt>
+		<dd>- black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>- white cold drink</dd>
+	</dl>
+
+	<h2>Unordered List with Disc Bullets</h2>
+	<ul style="list-style-type:disc;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List with Circle Bullets</h2>
+	<ul style="list-style-type: circle;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List with Square Bullets</h2>
+	<ul style="list-style-type:square;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List without Bullets</h2>
+	<ul style="list-style-type:none;">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<ul>
+		<li>Coffee</li>
+		<li>Tea
+			<ul>
+				<li>Black tea</li>
+				<li>Green tea</li>
+			</ul>
+		</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>An ordered HTML list</h2>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Numbers</h2>
+	<ol type="1">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Letters</h2>
+	<ol type="A">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Lowercase Letters</h2>
+	<ol type="a">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Roman Numbers</h2>
+	<ol type="I">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Lowercase Roman Numbers</h2>
+	<ol type="i">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>The start attribute</h2>
+	<p>By default, an ordered list will start counting from 1. Use the start attribute to start counting from a specified number:</p>
+	<ol start="50">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+	<ol type="I" start="50">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>A Nested List</h2>
+	<p>Lists can be nested (list inside list):</p>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea
+			<ol>
+				<li>Black tea</li>
+				<li>Green tea</li>
+			</ol>
+		</li>
+		<li>Milk</li>
+	</ol>
+
+	<div style="border: 1px solid black">Hello World</div>
+	<p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+	<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+	<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+
+	<div style="background-color: black;color:white;padding:20px;">
+		<h2>London</h2>
+		<p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+		<p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+	</div>
+
+	<h1>The span element</h1>
+	<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight: bold">dark green</span> eyes.</p>
+
+	<div class="city">
+		<h2>London</h2>
+		<p>London is the capital of England.</p>
+	</div>
+	<div class="city">
+		<h2>Paris</h2>
+		<p>Paris is the capital of France.</p>
+	</div>
+	<div class="city">
+		<h2>Tokyo</h2>
+		<p>Tokyo is the capital of Japan.</p>
+	</div>
+
+	<h1>My <span class="note">Important</span> Heading</h1>
+	<p>This is some <span class="note">important</span> text.</p>
+
+	<h2>The class Attribute</h2>
+	<p>Use CSS to style elements with the class name "city":</p>
+	<h2 class="city1">London</h2>
+	<p>London is the capital of England.</p>
+	<h2 class="city1">Paris</h2>
+	<p>Paris is the capital of France.</p>
+	<h2 class="city1">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<h2>Multiple Classes</h2>
+	<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+	<h2 class="city1 main">London</h2>
+	<h2 class="city1">Paris</h2>
+	<h2 class="city1">Tokyo</h2>
+
+	<h2>Different Elements Can Share Same Class</h2>
+	<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+	<h2 class="city1">Paris</h2>
+	<p class="city1">Paris is the capital of France.</p>
+
+	<h2>Use of The class Attribute in JavaScript</h2>
+	<p>Click the button to hide all elements with class name "city";</p>
+	<button onclick="myFunction()">Hide elements</button>
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+	<script>
+		function myFunction() {
+			var x = document.getElementsByClassName("city");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+	<h2>The id Attribute</h2>
+	<p>Use CSS to style an element with the id "myHeader":</p>
+	<h1 id="myHeader">My Header</h1>
+
+	<h2>Difference Between Class and ID</h2>
+	<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+	<h1 id="myHeader">My Cities</h1>
+	<h2 class="city1">London</h2>
+	<p>London is the capital of England.</p>
+	<h2 class="city1">Paris</h2>
+	<p>Paris is the capital of France.</p>
+	<h2 class="city1">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<h2>Using The id Attribute in JavaScript</h2>
+	<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+	<h1 id="myHeader1">Hello World!</h1>
+	<button onclick="displayResult()">Change text</button>
+	<script>
+		function displayResult() {
+			document.getElementById("myHeader1").innerHTML = "Have a nice day!";
+		}
+	</script>
+
+	<h2>HTML Iframes</h2>
+	<p>You can use the height and width attributes to specify the size of the iframe:</p>
+	<iframe src="W3School2.html" height="200" width="300" title="Iframe Example"></iframe>
+
+	<h2>HTML Iframes</h2>
+	<p> You can also use the CSS height and width properties to specify the size of the iframe:</p>
+	<iframe src="W3School2.html" style="height:200px;width:300px" title="Iframe Example"></iframe>
+
+	<h2>Remove the Iframe Border</h2>
+	<p>To remove the default border of the iframe, use CSS:</p>
+	<iframe src="W3School2.html" style="border:none;" title="Iframe Example"></iframe>
+
+	<h2>Custom Iframe Border</h2>
+	<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+	<iframe src="W3School2.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+	<h2>Iframe, Target for a Link</h2>
+	<iframe src="W3School2.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+	<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+	<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+	<h1>My First JavaScript</h1>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+	<p id="demo"></p>
+
+	<h2>Use JavaScript to Change Text</h2>
+	<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+	<p id="demo1"></p>
+	<script>
+		document.getElementById("demo1").innerHTML = "Hello JavaScript!";
+	</script>
+
+	<h1>My First JavaScript</h1>
+	<p>JavaScript can change the content of an HTML element:</p>
+	<button type="button" onclick="myFunction()">Click Me!</button>
+	<p id="demo2">This is a demonstration.</p>
+	<script>
+		function myFunction() {
+			document.getElementById("demo2").innerHTML = "Hello JavaScript!";
+		}
+	</script>
+
+	<h1>My First JavaScript</h1>
+	<p id="demo3">JavaScript can change the style of an HTML element.</p>
+	<script>
+		function myFunction() {
+			document.getElementById("demo3").style.fontsize = "25px";
+			document.getElementById("demo3").style.color = "red";
+			document.getElementById("demo3").style.backgroundColor = "yellow";
+		}
+	</script>
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<h1>My First JavaScript</h1>
+	<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+	<script>
+		function light(sw) {
+			var pic;
+			if (sw == 0) {
+				pic = "pic_bulboff.gif"
+			} else {
+				pic = "pic_bulbon.gif"
+			}
+			document.getElementById('myImage').src = pic;
+		}
+	</script>
+	<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+	<p>
+		<button type="button" onclick="light(1)">Light On</button>
+		<button type="button" onclick="light(0)">Light Off</button>
+	</p>
+
+	<p id="demo4"></p>
+	<script>
+		document.getElementById("demo4").innerHTML = "Hello JavaScript!";
+	</script>
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+	<h2>Using a Full URL File Path</h2>
+	<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+
+	<h2>Using a Relative File Path</h2>
+	<img src="images/picture.jpg" alt="Mountain" style="width:300px">
+
+	<p>The content of the body element is displayed in the browser window.</p>
+	<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+
+	<h1>My Web Page</h1>
+	<p id="test">A Paragraph</p>
+	<button type="button" onclick="mFunction()">Try it</button>
+
+	<h1>The base element</h1>
+	<p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+	<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+	<h2>Setting the Viewport</h2>
+	<p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
+
+	<h2>Responsive Image</h2>
+	<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+	<img src="img_girl.jpg" style="width:100%;">
+
+	<h2>Responsive Image</h2>
+	<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+	<p>Resize the browser window to see the effect.</p>
+	<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+
+	<h2>Show Different Images Depending on Browser Width</h2>
+	<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+	<picture>
+		<source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+		<source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+		<source srcset="flowers.jpg">
+		<img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+	</picture>
+
+	<h1 style="font-size: 10vw;">Responsive Text</h1>
+	<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+	<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+	<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+	<h2>Computer Code</h2>
+	<p>Some programming code:</p>
+	<code>
+		x = 5;
+		y = 6;
+		z = x + y;
+	</code>
+
+	<h2>The kbd Element</h2>
+	<p>The kbd element is used to define keyboard input:</p>
+	<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+	<h2>The samp Element</h2>
+	<p>The samp element is used to define sample output from a computer program.</p>
+	<p>Message from my computer:</p>
+	<p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+	<p>The code element does not preserve whitespace and line-breaks.</p>
+	<p>To fix this, you can put the code element inside a pre element:</p>
+	<pre>
+		<code>
+			x = 5;
+			y = 6;
+			z = x + y;
+		</code>
+	</pre>
+
+	<h2>The var Element</h2>
+	<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+	<section>
+		<h1>WWF</h1>
+		<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+	</section>
+	<section>
+		<h1>WWF's Panda symbol</h1>
+		<p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+	</section>
+
+	<h1>The article element</h1>
+	<article>
+		<h2>Google Chrome</h2>
+		<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+	</article>
+	<article>
+		<h2>Mozilla Firefox</h2>
+		<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+	</article>
+	<article>
+		<h2>Microsoft Edge</h2>
+		<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+	</article>
+
+	<article>
+		<header>
+			<h1>What Does WWF Do?</h1>
+			<p>WWF's mission:</p>
+		</header>
+		<p>
+			WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.
+		</p>
+	</article>
+
+	<footer>
+		<p>Author: Hege Refsnes</p>
+		<p><a href="mailto:hege@example.com">hege@example.com</a></p>
+	</footer>
+
+	<nav>
+		<a href="/html/">HTML</a>
+		<a href="/css/">CSS</a>
+		<a href="/js/">JavaScript</a>
+		<a href="/jquery/">jQuery</a>
+	</nav>
+
+	<p>My family and I visited the Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+	<aside>
+		<h4>Epcot Center</h4>
+		<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+	</aside>
+
+	<h2>Places to Visit</h2>
+	<p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+	<figure>
+		<img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+		<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+	</figure>
+
+	<p>I will display &euro;</p>
+	<p>I will display &#8364;</p>
+	<p>I will display &#x20AC;</p>
+
+	<p>I will display A B C</p>
+	<p>I will display &#65; &#66; &#67;</p>
+
+	<h1>My First Emoji</h1>
+	<p>&#128512;</p>
+
+	<h1>Sized Emojis</h1>
+	<p style="font-size: 48px;">&#128512; &#128516; &#128525; &#128151;</p>
+	<p style="font-size: 36px;">&#128507;&#128508;&#128509;&#128510;&#128511;&#128512;&#128513;&#128514;&#128515;&#128516;&#128517;</p>
+
+	<h2>HTML Forms</h2>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="submit">
+	</form>
+	<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+	<h2>Text input fields</h2>
+	<form>
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe">
+	</form>
+	<p>Note that the form itself is not visible.</p>
+	<p>Also note that the default width of text input fields is 20 characters.</p>
+
+	<h2>Radio Buttons</h2>
+	<p>Choose your favorite web language:</p>
+	<form>
+		<input type="radio" id="html" name="fav_language" value="HTML">
+		<label for="html">HTML</label><br>
+		<input type="radio" id="css" name="fav_language" value="CSS">
+		<label for="css">CSS</label><br>
+		<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+		<label for="javascript">JavaScript</label>
+	</form>
+
+	<h2>Checkboxes</h2>
+	<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+	<form action="action_page.php">
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1">I have a bike</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		<label for="vehicle2">I have a car</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		<label for="vehicle3">I have a boat</label><br><br>
+		<input type="submit" value="submit">		
+	</form>
+
+	<h2>The name Attribute</h2>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" value="John"><br><br>
+		<input type="submit" value="Submit">		
+	</form>
+	<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+	<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+
+	<h2>The form target attribute</h2>
+	<p>When submitting this form, the result will be opened in a new browser tab:</p>
+	<form action="action_page.php" target="_blank">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>The method Attribute</h2>
+	<p>This form will be submitted using the GET method:</p>
+	<form action="action_page.php" target="_blank" method="get">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+	<h2>The method Attribute</h2>
+	<p>This form will be submitted using the POST method:</p>
+	<form action="action_page.php" target="_blank" method="post">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+	<h1>The form autocomplete attribute</h1>
+	<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+	<p>Then, try to set autocomplete to "off".</p>
+	<form action="action_page.php" autocomplete="on">
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname"><br><br>
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email"><br><br>
+		<input type="submit">
+	</form>
+
+	<h1>The form novalidate attribute</h1>
+	<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
+	<form action="action_page.php" novalidate>
+		<label for="email">Enter your email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<input type="submit">
+	</form>
+	<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
+
+	<h2>The input Element</h2>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>The select Element</h2>
+	<p>The select element defines a drop-down list:</p>
+	<form action="action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+		<input type="submit">
+	</form>
+
+	<h2>Pre-selected Option</h2>
+	<p>You can preselect an option with the selected attribute:</p>
+	<form action="action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars">
+			<option value="volvo" selected>Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select>
+		<input type="submit">
+	</form>
+
+	<h2>Visible Option Values</h2>
+	<p>Use the size attribute to specify the number of visible values.</p>
+	<form action="action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars" size="4">
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select><br><br>
+		<input type="submit">
+	</form>
+
+	<h2>Allow Multiple Selections</h2>
+	<p>Use the multiple attribute to allow the user to select more than one value.</p>
+	<form action="action_page.php">
+		<label for="cars">Choose a car:</label>
+		<select id="cars" name="cars" size="4" multiple>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="fiat">Fiat</option>
+			<option value="audi">Audi</option>
+		</select><br><br>
+		<input type="submit">
+	</form>
+	<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+	<h2>Textarea</h2>
+	<p>The textarea element defines a multi-line input field.</p>
+	<form action="action_page.php">
+		<textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+		<br><br>
+		<input type="submit">
+	</form>
+
+	<h2>Styling Textarea</h2>
+	<p>Use CSS to change the size of the textarea:</p>
+	<form action="action_page.php">
+		<textarea name="message" style="width:200px;height:600px;">The cat was playing in the garden.</textarea>
+		<br>
+		<input type="submit">
+	</form>
+
+	<h2>The button Element</h2>
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+	<h2>Grouping Form Data with Fieldset</h2>
+	<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+	<form action="action_page.php">
+		<fieldset>
+			<legend>Personalia:</legend>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br><br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+
+	<h2>The datalist Element</h2>
+	<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+	<form action="action_page.php">
+		<input list="browsers" name="browser">
+		<datalist id="browsers">
+			<option value="Internet Explorer">
+			<option value="Firefox">
+			<option value="Chrome">
+			<option value="Opera">
+			<option value="Safari">
+		</datalist>
+		<input type="submit">
+	</form>
+	<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1</p>
+
+	<h2>The output Element</h2>
+	<p>The output element represents the result of a calculation.</p>
+	<form action="action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		0
+		<input type="range" id="a" name="a" value="50">
+		100 +
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+		<br><br>
+		<input type="submit">
+	</form>
+	<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+	<h2>Text field</h2>
+	<p>The <strong>input type="text"</strong> defines a one-list text input field:</p>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>Note that the form itself is not visible.</p>
+	<p>Also note that the default width of a text field is 20 characters.</p>
+
+	<h2>Password field</h2>
+	<p>The <strong>input type="password"</strong> defines a password field:</p>
+	<form>
+		<label for="username">Username:</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="pwd">Password:</label><br>
+		<input type="password" id="pwd" name="pwd"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+	<h2>Submit Button</h2>
+	<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".</p>
+
+	<h2>Reset Button</h2>
+	<p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:</p>
+	<form action="action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+	<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default value.</p>
+
+	<h2>Radio Buttons</h2>
+	<p>The <strong>input type="radio"</strong> defines a radio button:</p>
+	<p>Choose your favorite Web language:</p>
+	<form action="action_page.php">
+		<input type="radio" id="html" name="fav_language" value="HTML">
+		<label for="html">HTML</label><br>
+		<input type="radio" id="css" name="fav_language" value="CSS">
+		<label for="css">CSS</label><br>
+		<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+		<label for="javascript">JavaScript</label><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Checkboxes</h2>
+	<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+	<form action="action_page.php">
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		<label for="vehicle1">I have a bike</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+		<label for="vehicle2">I have a car</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+		<label for="vehicle3">I have a boat</label><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Input Button</h2>
+	<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+</body>
+</html>

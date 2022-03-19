@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/* a:link {
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited {
+			color: pink;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		a:active {
+			color: yellow;
+			background-color: transparent;
+			text-decoration: underline;
+		}*/
+
+		/*a:link, a:visited {
+			background-color: #f44336;
+			color: white;
+			padding: 15px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+		a:hover, a:active {
+			background-color: red;
+		}*/
+
+		/*img {
+			width: 100%;
+		}*/
+
+		/*div {
+			background-image: url('img_girl.jpg');
+		}*/
+
+		/*body {
+			background-image: url('img_girl.jpg');
+		}*/
+
+		/*body {
+			background-image: url('img_girl.jpg');
+			background-repeat: no-repeat;
+		}*/
+
+		/*body {
+			background-image: url('img_girl.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}*/
+
+		/*body {
+			background-image: url('img_girl.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}*/
+
+		/*table {
+			font-family: 'arial', sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+		}
+		th {
+			text-align: left;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			padding: 5px;
+		}
+		table {
+			border-spacing: 15px;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}*/
+
+		/*table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+			text-align: left;
+		}
+		#t01 {
+			width: 100%;
+			background-color: #f1f1c1;
+		}*/
+
+		/*table {
+			width: 100%;
+		}
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th, td {
+			padding: 15px;
+			text-align: left;
+		}
+		#t01 tr:nth-child(even) {
+			background-color: #eee;
+		}
+		#t01 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		#t01 th {
+			background-color: black;
+			color: white;
+		}*/
+
+		/*ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+		li a:hover {
+			background-color: #111111;
+		}*/
+		.all-browsers {
+			margin: 0;
+			padding: 5px;
+			background-color: lightgray;
+		}
+		.all-browsers > h1, .browser {
+			margin: 10px;
+			padding: 5px;
+		}
+		.browser {
+			background: white;
+		}
+		.browser > h2, p {
+			margin: 4px;
+			font-size: 90%;
+		}
+
+		aside {
+			width: 30%;
+			padding-left: 15px;
+			margin-left: 15px;
+			float: right;
+			font-style: italic;
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<!--<h2>Link Colors</h2>
+	<p>You can change the default colors of links</p>
+	<a href="html_images.asp" target="_blank">HTML Images</a>-->
+	
+	<!--<h2>Link Button</h2>
+	<p>A link styled as a button:</p>
+	<a href="default.asp" target="_blank">This is a link</a>-->
+
+	<!--<h2>Width/Height Attributes or Style?</h2>
+	<p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+	<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+	<p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+	<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">-->
+
+	<!--<h2>Background Image</h2>
+	<div>
+		You can specify background images<br>
+		for any visible HTML element.<br>
+		In this example, the background image<br>
+		is specified for a div element.<br>
+		By default, the background-image<br>
+		will repeat itself in the direction(s)<br>
+		where it is smaller than the element<br>
+		where it is specified. (Try resizing the<br>
+		browser window to see how the<br>
+		background image behaves.
+	</div>-->
+
+	<!--<h2>Background Image</h2>
+	<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>-->
+
+	<!--<h2>Background No Repeat</h2>
+	<p>You can avoid the image from being repeated by setting the background-repeat property to "no-repeat".</p>-->
+
+	<!--<h2>Background Cover</h2>
+	<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>-->
+
+	<!--<h2>Background Stretch</h2>
+	<p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, in this case the body element.
+	</p>-->
+
+	<!--<h2>HTML Table</h2>
+	<table>
+		<tr>
+			<th>Company</th>
+			<th>Contact</th>
+			<th>Country</th>
+		</tr>
+		<tr>
+			<td>Alfreds Futterkiste</td>
+			<td>Maria Anders</td>
+			<td>Germany</td>
+		</tr>
+		<tr>
+			<td>Centro Comercial Moctezuma</td>
+			<td>Francisco Chang</td>
+			<td>Mexico</td>
+		</tr>
+		<tr>
+			<td>Ernst Handel</td>
+			<td>Roland Mendel</td>
+			<td>Austria</td>
+		</tr>
+		<tr>
+			<td>Island Trading</td>
+			<td>Helen Bennett</td>
+			<td>UK</td>
+		</tr>
+		<tr>
+			<td>Laughing Bacchus Winecellars</td>
+			<td>Yoshi Tannamuri</td>
+			<td>Canada</td>
+		</tr>
+		<tr>
+			<td>Magazzini Alimentari Riuniti</td>
+			<td>Giovanni Rovelli</td>
+			<td>Italy</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Table With Border</h2>
+	<p>Use the CSS border property to add a border to the table.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Collapsed Borders</h2>
+	<p>If you want the borders to collapse into one border, and the CSS border-collapse property.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Cellpadding</h2>
+	<p>Cell padding specifies the space between the cell content and its borders.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Johnson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+	<p><strong>Tip:</strong> Try to change the padding to 5px.</p>-->
+
+	<!--<h2>Left-align Headings</h2>
+	<p>To left-align the table headings, use the CSS text-align property.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Border Spacing</h2>
+	<p>Border spacing specifies the space between the cells.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+	<p><strong>Tip:</strong> Try to change the border-spacing to 5px.</p>-->
+
+	<!--<h2>Cell that spans two columns</h2>
+	<p>To make a cell span more than one column, use the colspan attribute.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Name</th>
+			<th colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td>Bill Gates</td>
+			<td>55577854</td>
+			<td>55577855</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Cell that spans two rows</h2>
+	<p>To make a cell span more than one row, use the rowspan attribute.</p>
+	<table style="width:100%">
+		<tr>
+			<th>Name:</th>
+			<td>Bill Gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2">Telephone:</th>
+			<td>55577854</td>
+		</tr>
+		<tr>
+			<td>55577855</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Table Caption</h2>
+	<p>To add a caption to a table, use the caption tag.</p>
+	<table style="width:100%">
+		<caption>Monthly savings</caption>
+		<tr>
+			<th>Month</th>
+			<th>Savings</th>
+		</tr>
+		<tr>
+			<td>January</td>
+			<td>$100</td>
+		</tr>
+		<tr>
+			<td>February</td>
+			<td>$50</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Styling Tables</h2>
+	<table style="width:100%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+	<br>
+
+	<table id="t01">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Styling Tables</h2>
+	<table>
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+	<br>
+
+	<table id="t01">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>-->
+
+	<!--<h2>Navigation Menu</h2>
+	<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#news">News</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>-->
+
+	<article class="all-browsers">
+		<h1>Most Popular Browsers</h1>
+		<article class="browser">
+			<h2>Google Chrome</h2>
+			<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+		</article>
+		<article class="browser">
+			<h2>Mozilla Firefox</h2>
+			<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+		</article>
+		<article class="browser">
+			<h2>Microsoft Edge</h2>
+			<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+		</article>
+	</article>
+
+	<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+	<aside>
+		<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+	</aside>
+	<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+	<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+</body>
+</html>

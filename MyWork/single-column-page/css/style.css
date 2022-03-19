@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 20px;
+}
+main {
+	max-width: 960px;
+	margin: 60px auto;
+	padding: 20px;
+	text-align: center;
+}
+h1 {
+	color: #969696;
+	font-weight: 300;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+h1 strong {
+	color: #151f29;
+}
+h3 {
+	color: #151f29;
+	font-weight: 300;
+}
+form {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 50px;
+	text-align: left;
+}
+.form-left {
+	flex: 0.7;
+}
+input {
+	border: 1px solid #c2d3ff;
+	border-radius: 50px;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	padding: 15px 20px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+input::placeholder {
+	color: #c2d3ff;
+}
+input.error {
+	border-color: #ff5263;
+}
+input.error::placeholder {
+	color: #ff5263;
+}
+input:focus {
+	outline:none;
+}
+form small {
+	color:#ff5263;
+	font-style: italic;
+	z-index: 100;
+	margin: 0 20px 40px;
+	opacity: 0;
+}
+.form-left.error small {
+	opacity: 1;
+}
+button {
+	background-color: #4f7df3;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0 5px 5px #c2d3ff;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 0;
+	margin-left: 20px;
+	flex: 0.3;
+}
+button:hover {
+	opacity: 0.8;
+}
+.illustration {
+	max-width: 100%;
+	margin: 60px 0;
+}
+.social-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+.social-list li {
+	margin: 10px;
+}
+.social-list li a {
+	border: 1px solid #e5e1e1;
+	border-radius: 50%;
+	color: #4f7df3;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	height: 40px;
+	width: 40px;
+	text-decoration: none;
+}
+.social-list li a:hover {
+	background-color: #4f7df3;
+	border-color: #4f7df3;
+	color: #fff;
+}
+footer p {
+	color: #969696;
+}
+
+@media screen and (max-width: 650px){
+	form {
+		flex-direction: column;
+		text-align: center;
+	}
+	.form-left {
+		width: 100%;
+	}
+	button {
+		margin-left: 0;
+		width: 100%;
+	}
+}

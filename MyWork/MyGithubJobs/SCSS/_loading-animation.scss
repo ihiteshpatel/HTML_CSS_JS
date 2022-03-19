@@ -1,0 +1,22 @@
+@keyframes rotate360 {
+    to { transform: rotate(360deg);}
+}
+
+#loader {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    animation: 1.5s rotate360 infinite linear;
+    display: none;
+}
+
+#loader.active {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #loader {
+        width: 150px;
+        height: 150px;
+    }
+}

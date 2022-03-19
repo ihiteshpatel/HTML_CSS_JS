@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="head">
+            <div class="logo">calc</div>
+            <div class="switch_container">
+                <label for="switch">theme</label>
+                <div class="switch">
+                    <label for="switch" class="sw_label"><span>1</span><span>2</span><span>3</span></label>
+                    <input type="radio" checked class="switch__option" id="medium" name="option">
+                    <label for="medium" id="option1"></label>
+                    <input type="radio" class="switch__option" id="light" name="option">
+                    <label for="light" id="option2"></label>
+                    <input type="radio" class="switch__option" id="dark" name="option">
+                    <label for="dark" id="option3"></label>
+                </div>
+            </div>
+            <div class="display">
+                <h1 id="display--val">0</h1>
+            </div>
+        </section>
+        <section class="keyboard">
+            <div class="keyboard__row">
+                <button class="key num" id="7">7</button>
+                <button class="key num" id="8">8</button>
+                <button class="key num" id="9">9</button>
+                <button class="key special" id="del">del</button>
+            </div>
+            <div class="keyboard__row">
+                <button class="key num" id="4">4</button>
+                <button class="key num" id="5">5</button>
+                <button class="key num" id="6">6</button>
+                <button class="key operator" id="plus">+</button>
+            </div>
+            <div class="keyboard__row">
+                <button class="key num" id="1">1</button>
+                <button class="key num" id="2">2</button>
+                <button class="key num" id="3">3</button>
+                <button class="key operator" id="minus">-</button>
+            </div>
+            <div class="keyboard__row">
+                <button class="key" id="dec">.</button>
+                <button class="key num" id="0">0</button>
+                <button class="key operator" id="divide">/</button>
+                <button class="key operator" id="multiply">x</button>
+            </div>
+            <div class="keyboard__row">
+                <button class="key special" id="reset">reset</button>
+                <button class="key special operator" id="equal">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/switch.js"></script>
+</body>
+
+</html>
